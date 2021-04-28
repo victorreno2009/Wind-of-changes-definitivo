@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/Florest.png" type="Texture" id=1]
 [ext_resource path="res://Astran.tscn" type="PackedScene" id=2]
 [ext_resource path="res://BGM/sound packs/Chrono-Trigger-OST-11-Secret-of-the-Forest_1.ogg" type="AudioStream" id=3]
 [ext_resource path="res://cenarios/Passagem_CasteloDalton.gd" type="Script" id=4]
+[ext_resource path="res://DialogBox/Main.tscn" type="PackedScene" id=5]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Florest.png 0"
@@ -162,6 +163,12 @@ autoplay = true
 
 [node name="Passagem_CasteloDalton" type="Area2D" parent="."]
 script = ExtResource( 4 )
+
+[node name="Control" parent="Passagem_CasteloDalton" instance=ExtResource( 5 )]
+margin_left = 314.073
+margin_top = 875.198
+margin_right = 314.073
+margin_bottom = 875.198
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_CasteloDalton"]
 position = Vector2( 296, 48 )
