@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Final-Fantasy-VII-Barret_s-Theme-_HQ_.ogg-f8a66fa376c48a5b6e51949daa85422b.oggstr"
+
+[deps]
+
+source_file="res://BGM/sound packs/Final-Fantasy-VII-Barret_s-Theme-_HQ_.ogg"
+dest_files=[ "res://.import/Final-Fantasy-VII-Barret_s-Theme-_HQ_.ogg-f8a66fa376c48a5b6e51949daa85422b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

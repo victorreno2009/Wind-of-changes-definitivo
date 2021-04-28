@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/youseebiggirl-vogel-im-kafig-piano-and-orchestral-cover-dramatic.ogg-0f7794b67ba7b011b4dd0b46471185b0.oggstr"
+
+[deps]
+
+source_file="res://BGM/sound packs/youseebiggirl-vogel-im-kafig-piano-and-orchestral-cover-dramatic.ogg"
+dest_files=[ "res://.import/youseebiggirl-vogel-im-kafig-piano-and-orchestral-cover-dramatic.ogg-0f7794b67ba7b011b4dd0b46471185b0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
