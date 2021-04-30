@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Astran.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/DaltonCastle.png" type="Texture" id=2]
-[ext_resource path="res://Dalton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cenarios/Passagem_TronoDalton.gd" type="Script" id=3]
 [ext_resource path="res://BGM/sound packs/Chrono-Trigger-OST-55-Ocean-Palace.ogg" type="AudioStream" id=4]
 
 [sub_resource type="TileSet" id=1]
@@ -119,6 +119,9 @@
 7/shapes = [  ]
 7/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 19.1979 )
+
 [node name="salaoDalton" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -131,20 +134,19 @@ __meta__ = {
 }
 
 [node name="Astran" parent="." instance=ExtResource( 1 )]
-position = Vector2( 180.003, 198.892 )
+position = Vector2( 183.181, 255.044 )
 
 [node name="Camera2D" type="Camera2D" parent="Astran"]
 current = true
 
-[node name="Paredes" type="StaticBody2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paredes"]
-visible = false
-polygon = PoolVector2Array( 2.75, 3.46248, 2.7737, 244.708, 13.9159, 244.708, 14.2491, 198.163, 25.4737, 198.023, 31.6472, 204.337, 42.5912, 204.337, 48.6246, 197.041, 48.6246, 204.829, 53.5964, 205.109, 53.5964, 172.066, 100.879, 172.066, 100.879, 205.109, 105.866, 205.39, 105.866, 197.252, 111.759, 204.267, 122.423, 204.27, 127.754, 197.813, 155.063, 197.804, 160.025, 204.047, 170.899, 204.047, 176.898, 197.432, 176.885, 205.682, 181.345, 205.608, 181.358, 197.432, 228.913, 197.432, 228.913, 205.757, 233.224, 205.757, 233.298, 197.432, 239.988, 204.196, 250.053, 204.27, 255.925, 198.027, 299.218, 198.25, 313.414, 213.784, 313.489, 216.608, 316.536, 219.358, 319.509, 219.061, 319.545, 185.269, 322.243, 183.148, 326.108, 185.081, 329.973, 191.473, 332.342, 199.551, 332.203, 230.274, 348.823, 245.396, 2.9234, 244.957, 2.64278, 253.054, 357.24, 253.054, 357.24, 197.432, 299.078, 135.791, 135.007, 135.418, 109.736, 135.121, 101.952, 128.827, 51.5046, 128.716, 51.5046, 118.805, 12.5875, 118.805, 12.3175, 101.632, 37.539, 101.986, 37.4198, 69.8125, 122.745, 69.8125, 122.745, 119.31, 102.843, 119.473, 102.954, 128.605, 134.115, 128.283, 134.381, 3.43193 )
-
-[node name="Dalton" parent="." instance=ExtResource( 3 )]
-position = Vector2( 183.943, 153.097 )
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="Passagem_TronoDalton" type="Area2D" parent="."]
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_TronoDalton"]
+position = Vector2( 57.0819, -38.6492 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Passagem_TronoDalton" to="Passagem_TronoDalton" method="_on_Passagem_TronoDalton_body_entered"]

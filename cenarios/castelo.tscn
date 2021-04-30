@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/DaltonCastle.png" type="Texture" id=1]
 [ext_resource path="res://Astran.tscn" type="PackedScene" id=2]
 [ext_resource path="res://BGM/sound packs/Chrono-Trigger-OST-55-Ocean-Palace.ogg" type="AudioStream" id=3]
+[ext_resource path="res://cenarios/Passagem_SalaoDalton.gd" type="Script" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DaltonCastle.png 0"
@@ -76,6 +77,9 @@
 4/shapes = [  ]
 4/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 14.4753, 32.3479 )
+
 [node name="castelo" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -100,3 +104,11 @@ polygon = PoolVector2Array( 2.75, 3.46248, 2.7737, 244.708, 13.9159, 244.708, 14
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 autoplay = true
+
+[node name="Passagem_SalaoDalton" type="Area2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_SalaoDalton"]
+position = Vector2( 191.136, 391.762 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Passagem_SalaoDalton" to="Passagem_SalaoDalton" method="_on_Passagem_SalaoDalton_body_entered"]

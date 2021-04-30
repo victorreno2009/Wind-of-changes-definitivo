@@ -157,18 +157,18 @@ position = Vector2( 320, 720 )
 [node name="Camera2D" type="Camera2D" parent="Astran"]
 current = true
 
+[node name="Control" parent="Astran" instance=ExtResource( 5 )]
+margin_left = -5.927
+margin_top = 155.198
+margin_right = -5.927
+margin_bottom = 155.198
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
 autoplay = true
 
 [node name="Passagem_CasteloDalton" type="Area2D" parent="."]
 script = ExtResource( 4 )
-
-[node name="Control" parent="Passagem_CasteloDalton" instance=ExtResource( 5 )]
-margin_left = 314.073
-margin_top = 875.198
-margin_right = 314.073
-margin_bottom = 875.198
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_CasteloDalton"]
 position = Vector2( 296, 48 )

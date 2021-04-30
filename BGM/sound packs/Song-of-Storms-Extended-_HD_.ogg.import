@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Song-of-Storms-Extended-_HD_.ogg-4f9bf4d26f43a5b65b84d63ceef07440.oggstr"
+
+[deps]
+
+source_file="res://BGM/sound packs/Song-of-Storms-Extended-_HD_.ogg"
+dest_files=[ "res://.import/Song-of-Storms-Extended-_HD_.ogg-4f9bf4d26f43a5b65b84d63ceef07440.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
