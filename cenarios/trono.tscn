@@ -33,14 +33,11 @@ cell_size = Vector2( 8, 8 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 131083, 3, 0, 131084, 3, 0, 131087, 4, 0, 196623, 4, 0, 262159, 4, 0 )
 
-[node name="Astran" parent="." instance=ExtResource( 2 )]
-position = Vector2( 191.587, 259.365 )
-
-[node name="Camera2D" type="Camera2D" parent="Astran"]
-current = true
-
 [node name="Rei Zeal" parent="." instance=ExtResource( 3 )]
 position = Vector2( 191.6, 160.491 )
+
+[node name="Astran" parent="." instance=ExtResource( 2 )]
+position = Vector2( 191.587, 259.365 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
@@ -52,4 +49,9 @@ script = ExtResource( 5 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_Vila"]
 position = Vector2( 192.217, 292.33 )
 shape = SubResource( 2 )
+
+[node name="Paredes" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paredes"]
+polygon = PoolVector2Array( 167.243, 279.865, 74.0833, 280.55, 57.7043, 261.651, 38.8055, 261.651, 23.0565, 246.532, 62.3527, 246.648, 63.0661, 36.8179, 111.068, 38.1602, 111.127, 121.582, 119.145, 121.582, 120.927, 216.017, 136.963, 216.908, 138.745, 143.854, 182.399, 142.963, 182.399, 151.872, 174.381, 151.872, 174.381, 168.799, 180.617, 168.799, 180.617, 175.036, 201.999, 175.036, 202.89, 168.799, 209.126, 168.799, 209.126, 151.872, 201.108, 151.872, 201.108, 142.963, 247.435, 143.854, 248.326, 214.235, 265.253, 215.126, 265.253, 120.691, 272.38, 120.691, 272.38, 40.5099, 320.488, 40.5099, 321.379, 248.98, 358.797, 248.089, 346.324, 265.016, 324.943, 265.016, 311.579, 279.271, 216.253, 279.271, 222.688, 285.271, 222.688, 301.003, 372.519, 301.003, 372.206, 14.1306, 10.0284, 12.7677, 11.8102, 301.419, 161.057, 303.201, 160.886, 286.751 )
 [connection signal="body_entered" from="Passagem_Vila" to="Passagem_Vila" method="_on_Passagem_Vila_body_entered"]
