@@ -9,14 +9,15 @@ func _ready():
 	
 	$AnimatedSprite.play("Walk left")
 	posicao_inicial = $".".position.x
-	posicao_final = posicao_inicial + 40
+	posicao_final = posicao_inicial 
 	
 	
 
 func _process(_delta):
 	
 	if(posicao_inicial <= posicao_final and flip):
-		$".".position.x += velocidade
+		#$".".position.x += velocidade
+		$AnimatedSprite.play("Up")
 		$AnimatedSprite.flip_h = false
 		if($".".position.x >= posicao_final):
 			flip = true

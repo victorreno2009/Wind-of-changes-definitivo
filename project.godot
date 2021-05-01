@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="WIND OF CHANGES"
-run/main_scene="res://cutscenes/prologo-prisao.tscn"
+run/main_scene="res://Tela_Inicial.tscn"
 config/icon="res://icon.png"
 
 [display]

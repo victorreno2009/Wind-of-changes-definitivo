@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Astran.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/DaltonCastle.png" type="Texture" id=2]
 [ext_resource path="res://Dalton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://BGM/sound packs/Chrono-Trigger-OST-55-Ocean-Palace.ogg" type="AudioStream" id=4]
+[ext_resource path="res://cenarios/Passagem dalton - zeal.gd" type="Script" id=5]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DaltonCastle.png 0"
@@ -119,6 +120,9 @@
 7/shapes = [  ]
 7/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 7.59209, 2.52979 )
+
 [node name="tronoDalton" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -146,3 +150,11 @@ current = true
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
+
+[node name="Passagem dalton - zeal" type="Area2D" parent="."]
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem dalton - zeal"]
+position = Vector2( 129.573, 526.865 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Passagem dalton - zeal" to="Passagem dalton - zeal" method="_on_Passagem_dalton__zeal_body_entered"]
