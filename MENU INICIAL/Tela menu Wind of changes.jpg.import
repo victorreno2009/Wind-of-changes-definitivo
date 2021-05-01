@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tela menu Wind of changes.jpg-7e9576f8d52196eb1c51c6140846146c.stex"
+path="res://.import/Tela menu Wind of changes.jpg-23a2af4d05d5718da866e51f9c222ab5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tela menu Wind of changes.jpg"
-dest_files=[ "res://.import/Tela menu Wind of changes.jpg-7e9576f8d52196eb1c51c6140846146c.stex" ]
+source_file="res://MENU INICIAL/Tela menu Wind of changes.jpg"
+dest_files=[ "res://.import/Tela menu Wind of changes.jpg-23a2af4d05d5718da866e51f9c222ab5.stex" ]
 
 [params]
 
