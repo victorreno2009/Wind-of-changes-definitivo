@@ -1,21 +1,27 @@
 extends Control
 
-var dialog = [
-	'Hello there, this tutorial is awesome.',
-	'If you like what you see, you can click the subscribe button',
-	'and if you don\'t you shoud do it anyway!'
-]
-
+var dialog = []
+var fraseEscolhida
 var dialog_index = 0
 var finished = false
+var bol = false
 
-func _ready():
+func getDialog(dialogue, escolha):
+	dialog = dialogue
+	fraseEscolhida = escolha 
+	print(dialog)
 	load_dialog()
 
 func _process(delta):
 	$"next-indicator".visible = finished
 	if Input.is_action_just_pressed("ui_accept"):
 		load_dialog()
+	if dialog_index - 1 == fraseEscolhida and bol == false:
+		print("buttons.show")
+		bol = true
+	elif dialog_index - 1 != fraseEscolhida and bol == true:
+		print('saiu')
+		bol = false
 
 func load_dialog():
 	if dialog_index < dialog.size():

@@ -1,5 +1,5 @@
 extends KinematicBody2D
-
+onready var cenaDialogo = load("res://DialogBox/Main.tscn")
 
 export var velocidade_andar = 60
 var pos = "Idle_Up"
@@ -38,3 +38,8 @@ func update_animation():
 		$AnimatedSprite.play(pos)
 		# $AnimatedSprite.play("Walk_Up")
 		# $AnimatedSprite.play("Walk_Down")
+
+func spawnDialogo(dialog, escolha):
+	var dialogBox = cenaDialogo.instance()
+	self.add_child(dialogBox)
+	dialogBox.get_node("DialogBox").getDialog(dialog, escolha)
