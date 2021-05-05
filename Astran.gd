@@ -7,16 +7,11 @@ var pos = "Idle_Up"
 var movement = Vector2(0,0)
 
 func _physics_process(delta):
-
-	
 	var horizontal_Axis = Input.get_action_strength("Right") - Input.get_action_strength("Left")
 	movement.x = velocidade_andar * horizontal_Axis
 	var vertical_Axis = Input.get_action_strength("Down") - Input.get_action_strength("Up")
 	movement.y = velocidade_andar * vertical_Axis
-	
-	
 	move_and_slide(movement,Vector2.UP)
-	
 	update_animation()
 
 func update_animation():
@@ -43,3 +38,4 @@ func spawnDialogo(dialog, escolha):
 	var dialogBox = cenaDialogo.instance()
 	self.add_child(dialogBox)
 	dialogBox.get_node("DialogBox").getDialog(dialog, escolha)
+	

@@ -6,7 +6,7 @@ var boolean = false
 var boolean2
 
 func _process(delta):
-	var inpt = Input.is_action_pressed("ui_accept")
+	var inpt = Input.is_action_pressed("Interact")
 	if inpt and boolean:
 		refjogador.spawnDialogo(falas, escolha)
 		boolean = false
