@@ -1,0 +1,310 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://assets/Florest.png" type="Texture" id=1]
+[ext_resource path="res://Astran.tscn" type="PackedScene" id=2]
+[ext_resource path="res://BGM/sound packs/Chrono-Trigger-OST-11-Secret-of-the-Forest_1.ogg" type="AudioStream" id=3]
+[ext_resource path="res://cenarios/Passagem_CasteloDalton.gd" type="Script" id=4]
+[ext_resource path="res://DialogBox/Main.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/Guarda_Floresta/guarda.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Florest Night.png" type="Texture" id=7]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Florest.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 768, 760 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Florest.png 1"
+1/texture = ExtResource( 1 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 800, 0, 64, 96 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 0
+1/autotile/bitmask_flags = [  ]
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 32, 32 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Florest.png 2"
+2/texture = ExtResource( 1 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 800, 0, 64, 96 )
+2/tile_mode = 1
+2/autotile/bitmask_mode = 0
+2/autotile/bitmask_flags = [  ]
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 32, 32 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Florest.png 3"
+3/texture = ExtResource( 1 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 320, 736, 32, 32 )
+3/tile_mode = 1
+3/autotile/bitmask_mode = 0
+3/autotile/bitmask_flags = [  ]
+3/autotile/icon_coordinate = Vector2( 0, 0 )
+3/autotile/tile_size = Vector2( 32, 32 )
+3/autotile/spacing = 0
+3/autotile/occluder_map = [  ]
+3/autotile/navpoly_map = [  ]
+3/autotile/priority_map = [  ]
+3/autotile/z_index_map = [  ]
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Florest.png 4"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 288, 736, 32, 32 )
+4/tile_mode = 1
+4/autotile/bitmask_mode = 0
+4/autotile/bitmask_flags = [  ]
+4/autotile/icon_coordinate = Vector2( 0, 0 )
+4/autotile/tile_size = Vector2( 32, 32 )
+4/autotile/spacing = 0
+4/autotile/occluder_map = [  ]
+4/autotile/navpoly_map = [  ]
+4/autotile/priority_map = [  ]
+4/autotile/z_index_map = [  ]
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Florest.png 5"
+5/texture = ExtResource( 1 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 288, 704, 64, 64 )
+5/tile_mode = 1
+5/autotile/bitmask_mode = 0
+5/autotile/bitmask_flags = [  ]
+5/autotile/icon_coordinate = Vector2( 0, 0 )
+5/autotile/tile_size = Vector2( 32, 32 )
+5/autotile/spacing = 0
+5/autotile/occluder_map = [  ]
+5/autotile/navpoly_map = [  ]
+5/autotile/priority_map = [  ]
+5/autotile/z_index_map = [  ]
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Florest.png 6"
+6/texture = ExtResource( 1 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 280, 72, 48 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Florest.png 7"
+7/texture = ExtResource( 1 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 768, 88, 16, 40 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Florest.png 8"
+8/texture = ExtResource( 1 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 272, 658, 68, 47 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Florest Night.png 9"
+9/texture = ExtResource( 7 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 544, 0, 68, 47 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "Florest Night.png 10"
+10/texture = ExtResource( 7 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 8, 272, 8, 8 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "Florest Night.png 11"
+11/texture = ExtResource( 7 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 272, 72, 48 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "Florest Night.png 12"
+12/texture = ExtResource( 7 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 768, 768 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "Florest Night.png 13"
+13/texture = ExtResource( 7 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 32, 272, 24, 24 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 40, 10 )
+
+[node name="florestaEscura" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+cell_size = Vector2( 69, 47 )
+format = 1
+tile_data = PoolIntArray( -262149, 11, 0, -262148, 11, 0, -262147, 11, 0, -262146, 11, 0, -262145, 11, 0, -327680, 11, 0, -327679, 11, 0, -327678, 11, 0, -327677, 11, 0, -327676, 11, 0, -327675, 11, 0, -327674, 11, 0, -327673, 11, 0, -327672, 11, 0, -327671, 11, 0, -327670, 11, 0, -327669, 11, 0, -327668, 11, 0, -327667, 11, 0, -196613, 11, 0, -196612, 11, 0, -196611, 11, 0, -196610, 11, 0, -196609, 11, 0, -262144, 11, 0, -262143, 11, 0, -262142, 11, 0, -262141, 11, 0, -262140, 11, 0, -262139, 11, 0, -262138, 11, 0, -262137, 11, 0, -262136, 11, 0, -262135, 11, 0, -262134, 11, 0, -262133, 11, 0, -262132, 11, 0, -262131, 11, 0, -131077, 11, 0, -131076, 11, 0, -131075, 11, 0, -131074, 11, 0, -131073, 11, 0, -196608, 11, 0, -196607, 11, 0, -196606, 11, 0, -196605, 11, 0, -196604, 11, 0, -196603, 11, 0, -196602, 11, 0, -196601, 11, 0, -196600, 11, 0, -196599, 11, 0, -196598, 11, 0, -196597, 11, 0, -196596, 11, 0, -196595, 11, 0, -65541, 11, 0, -65540, 11, 0, -65539, 11, 0, -65538, 11, 0, -65537, 11, 0, -131072, 11, 0, -131071, 11, 0, -131070, 11, 0, -131069, 11, 0, -131068, 11, 0, -131067, 11, 0, -131066, 11, 0, -131065, 11, 0, -131064, 11, 0, -131063, 11, 0, -131062, 11, 0, -131061, 11, 0, -131060, 11, 0, -131059, 11, 0, -5, 11, 0, -4, 11, 0, -3, 11, 0, -2, 11, 0, -1, 11, 0, -65536, 11, 0, -65535, 11, 0, -65534, 11, 0, -65533, 11, 0, -65532, 11, 0, -65531, 11, 0, -65530, 11, 0, -65529, 11, 0, -65528, 11, 0, -65527, 11, 0, -65526, 11, 0, -65525, 11, 0, -65524, 11, 0, -65523, 11, 0, 65531, 11, 0, 65532, 11, 0, 65533, 11, 0, 65534, 11, 0, 65535, 11, 0, 0, 12, 0, 11, 11, 0, 12, 11, 0, 13, 11, 0, 131067, 11, 0, 131068, 11, 0, 131069, 11, 0, 131070, 11, 0, 131071, 11, 0, 65547, 11, 0, 65548, 11, 0, 65549, 11, 0, 196603, 11, 0, 196604, 11, 0, 196605, 11, 0, 196606, 11, 0, 196607, 11, 0, 131083, 11, 0, 131084, 11, 0, 131085, 11, 0, 262139, 11, 0, 262140, 11, 0, 262141, 11, 0, 262142, 11, 0, 262143, 11, 0, 196619, 11, 0, 196620, 11, 0, 196621, 11, 0, 327675, 11, 0, 327676, 11, 0, 327677, 11, 0, 327678, 11, 0, 327679, 11, 0, 262155, 11, 0, 262156, 11, 0, 262157, 11, 0, 393211, 11, 0, 393212, 11, 0, 393213, 11, 0, 393214, 11, 0, 393215, 11, 0, 327691, 11, 0, 327692, 11, 0, 327693, 11, 0, 458747, 11, 0, 458748, 11, 0, 458749, 11, 0, 458750, 11, 0, 458751, 11, 0, 393227, 11, 0, 393228, 11, 0, 393229, 11, 0, 524283, 11, 0, 524284, 11, 0, 524285, 11, 0, 524286, 11, 0, 524287, 11, 0, 458763, 11, 0, 458764, 11, 0, 458765, 11, 0, 589819, 11, 0, 589820, 11, 0, 589821, 11, 0, 589822, 11, 0, 589823, 11, 0, 524299, 11, 0, 524300, 11, 0, 524301, 11, 0, 655355, 11, 0, 655356, 11, 0, 655357, 11, 0, 655358, 11, 0, 655359, 11, 0, 589835, 11, 0, 589836, 11, 0, 589837, 11, 0, 720891, 11, 0, 720892, 11, 0, 720893, 11, 0, 720894, 11, 0, 720895, 11, 0, 655371, 11, 0, 655372, 11, 0, 655373, 11, 0, 786427, 11, 0, 786428, 11, 0, 786429, 11, 0, 786430, 11, 0, 786431, 11, 0, 720907, 11, 0, 720908, 11, 0, 720909, 11, 0, 851963, 11, 0, 851964, 11, 0, 851965, 11, 0, 851966, 11, 0, 851967, 11, 0, 786443, 11, 0, 786444, 11, 0, 786445, 11, 0, 917499, 11, 0, 917500, 11, 0, 917501, 11, 0, 917502, 11, 0, 917503, 11, 0, 851979, 11, 0, 851980, 11, 0, 851981, 11, 0, 983035, 11, 0, 983036, 11, 0, 983037, 11, 0, 983038, 11, 0, 983039, 11, 0, 917515, 11, 0, 917516, 11, 0, 917517, 11, 0, 1048571, 11, 0, 1048572, 11, 0, 1048573, 11, 0, 1048574, 11, 0, 1048575, 11, 0, 983051, 11, 0, 983052, 11, 0, 983053, 11, 0, 1114107, 11, 0, 1114108, 11, 0, 1114109, 11, 0, 1114110, 11, 0, 1114111, 11, 0, 1048576, 11, 0, 1048577, 11, 0, 1048578, 11, 0, 1048579, 11, 0, 1048580, 11, 0, 1048581, 11, 0, 1048582, 11, 0, 1048583, 11, 0, 1048584, 11, 0, 1048585, 11, 0, 1048586, 11, 0, 1048587, 11, 0, 1048588, 11, 0, 1048589, 11, 0, 1179643, 11, 0, 1179644, 11, 0, 1179645, 11, 0, 1179646, 11, 0, 1179647, 11, 0, 1114112, 11, 0, 1114113, 11, 0, 1114114, 11, 0, 1114115, 11, 0, 1114116, 11, 0, 1114117, 11, 0, 1114118, 11, 0, 1114119, 11, 0, 1114120, 11, 0, 1114121, 11, 0, 1114122, 11, 0, 1114123, 11, 0, 1114124, 11, 0, 1114125, 11, 0, 1245179, 11, 0, 1245180, 11, 0, 1245181, 11, 0, 1245182, 11, 0, 1245183, 11, 0, 1179648, 11, 0, 1179649, 11, 0, 1179650, 11, 0, 1179651, 11, 0, 1179652, 11, 0, 1179653, 11, 0, 1179654, 11, 0, 1179655, 11, 0, 1179656, 11, 0, 1179657, 11, 0, 1179658, 11, 0, 1179659, 11, 0, 1179660, 11, 0, 1179661, 11, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="guarda" parent="." instance=ExtResource( 6 )]
+position = Vector2( 296, 504 )
+
+[node name="Astran" parent="." instance=ExtResource( 2 )]
+position = Vector2( 320, 720 )
+
+[node name="Camera2D" type="Camera2D" parent="Astran"]
+current = true
+
+[node name="Control" parent="Astran" instance=ExtResource( 5 )]
+visible = false
+margin_left = -5.927
+margin_top = 155.198
+margin_right = -5.927
+margin_bottom = 155.198
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+
+[node name="Passagem_CasteloDalton" type="Area2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_CasteloDalton"]
+position = Vector2( 296, 48 )
+shape = SubResource( 2 )
+
+[node name="Paredes" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paredes"]
+visible = false
+polygon = PoolVector2Array( 256, 368, 232, 376, 206.131, 372.314, 180.793, 395.468, 180.044, 407.454, 145.583, 407.454, 144.834, 420.939, 87.8981, 420.939, 54.1862, 469.634, 53.9023, 576.005, 63.4267, 588.704, 63.4267, 695.06, 75.6064, 708, 180.376, 707.056, 203.03, 686.291, 203.03, 672.133, 177.545, 672.133, 176.601, 649.48, 191.703, 639.097, 209.637, 640.985, 209.637, 620.22, 219.075, 620.22, 179.433, 578.689, 133.183, 582.465, 138.846, 573.026, 149.229, 566.419, 152.06, 543.766, 127.52, 527.72, 125.632, 494.684, 148.285, 465.424, 175.657, 460.705, 214.356, 419.174, 277.185, 394, 327.185, 378, 371.893, 349.459, 401.624, 344.702, 422.435, 348.27, 453.949, 322.702, 499.504, 295.542, 532.262, 294.282, 558.721, 303.101, 585.179, 330.819, 577.619, 356.018, 558.721, 371.137, 575.099, 401.375, 532.262, 410.194, 491.945, 417.754, 452.887, 430.353, 445.328, 444.212, 452.887, 469.411, 448, 480, 408.79, 492.089, 364.693, 494.609, 354.613, 482.01, 334.455, 482.01, 325.635, 490.829, 286.578, 494.609, 256.34, 502.169, 253.82, 523.587, 228.621, 527.367, 228.621, 538.706, 286.578, 550.046, 302.957, 590.363, 301.697, 613.042, 285.318, 621.861, 293.601, 677.865, 280.887, 688.46, 271.352, 689.52, 269.233, 705.411, 279.828, 736.136, 328, 784, 272.411, 775.336, -25.2977, 775.336, -26.9946, -78.429, 874.446, -81.7926, 877.81, 789.376, 395.629, 784.255, 336, 784, 376, 752, 357.575, 740.255, 340.926, 716.47, 350.44, 691.497, 340.926, 671.281, 327.845, 641.55, 334.98, 624.902, 334.98, 597.55, 320, 568, 340.926, 529.765, 377.791, 526.197, 419.414, 555.928, 463.414, 558.306, 499.09, 590.415, 509.793, 616.577, 549.037, 671.281, 530.01, 685.551, 571.632, 690.308, 596.605, 724.795, 642.985, 718.849, 666.769, 743.822, 707.202, 711.714, 708.391, 695.065, 685.796, 659.389, 698.877, 630.848, 727.418, 621.334, 716.715, 604.685, 700.067, 589.225, 716.715, 554.738, 748.824, 534.522, 733.328, 526.81, 672.784, 528.491, 659.329, 550.355, 625.694, 557.082, 587.012, 557.082, 541.604, 557.082, 499.559, 550.355, 515.725, 529.656, 517.241, 501.228, 504, 480, 512, 456, 560, 432, 584, 432, 598.734, 439.067, 638.301, 414.528, 666.625, 375.77, 712.823, 382.211, 716.614, 340.517, 723.221, 307.441, 741.137, 279.929, 715.666, 265.695, 670.371, 263.573, 631.71, 271.912, 613.032, 254.458, 532.872, 245.468, 472.94, 247.715, 420.499, 253.708, 402.519, 278.43, 402.519, 300.905, 362.814, 306.149, 361.316, 273.186, 330.601, 269.441, 327.604, 253.708, 235.458, 237.227, 181.519, 224.491, 194.255, 206.512, 177.773, 178.044, 176, 160, 192, 136, 208, 120, 237, 104, 254, 95, 286, 95, 307, 109, 329, 118, 342, 125, 381, 128, 443, 127, 465, 88, 451, 79.0666, 411, 75.0666, 382, 83.0666, 383, 95.0666, 349, 95.0666, 348, 76.0666, 328, 73.0666, 343, 52.0666, 334, 29.0666, 317, 22.0666, 314, -3.93344, 271, -6.93344, 274, 25.0666, 247.524, 41.0565, 258.455, 66.4936, 231, 74.0666, 188, 82.0666, 152, 90.0666, 132, 82.0666, 110, 82.0666, 101, 94.0666, 83, 99.0666, 96, 112.067, 96, 127.067, 68, 128.067, 34, 156.067, 31, 207.067, 15, 231.067, 67, 270.067, 90, 270.067, 103, 254.067, 132, 252.067, 140, 263.067, 168, 264, 192, 264, 224, 272, 256, 296, 272, 320, 260.527, 351.991 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+visible = false
+tile_set = SubResource( 1 )
+cell_size = Vector2( 1, 1 )
+format = 1
+tile_data = PoolIntArray( 6422732, 13, 0, 6553852, 13, 0, 6619362, 13, 0, 6684868, 13, 0, 6750444, 13, 0, 6881494, 13, 0, 6947053, 13, 0, 7012545, 13, 0, 7405757, 13, 0, 7667897, 13, 0, 7667923, 13, 0, 7930035, 13, 0, 8454318, 13, 0, 8716488, 13, 0, 9240740, 13, 0, 9502895, 13, 0, 9502914, 13, 0, 15990953, 13, 0, 16318627, 13, 0, 16515273, 13, 0, 16973978, 13, 0, 16974044, 13, 0, 17105088, 13, 0, 17170605, 13, 0, 17301651, 13, 0, 17432805, 13, 0, 17694934, 13, 0, 17891545, 13, 0, 18022585, 13, 0, 18088175, 13, 0, 18415838, 13, 0, 18743489, 13, 0, 18809079, 13, 0, 19005652, 13, 0, 19202303, 13, 0, 19661043, 13, 0, 19661063, 13, 0, 19726556, 13, 0, 19857658, 13, 0, 20119764, 13, 0, 20447464, 13, 0, 20578566, 13, 0, 21102843, 13, 0, 27394605, 13, 0, 27460124, 13, 0, 27853332, 13, 0, 28115470, 13, 0, 28377615, 13, 0, 28443134, 13, 0, 28770806, 13, 0, 29098481, 13, 0, 29557227, 13, 0, 29950438, 13, 0, 30343650, 13, 0, 46793079, 13, 0, 47251826, 13, 0, 47645041, 13, 0, 47710463, 13, 0, 47710598, 13, 0, 48038330, 13, 0, 48038358, 13, 0, 48169216, 13, 0, 48300395, 13, 0, 48300446, 13, 0, 48365831, 13, 0, 48431492, 13, 0, 48496992, 13, 0, 48562441, 13, 0, 48627964, 13, 0, 48693596, 13, 0, 48890128, 13, 0, 48955659, 13, 0, 48955736, 13, 0, 49217812, 13, 0, 49283384, 13, 0, 49283406, 13, 0, 49348905, 13, 0, 49348961, 13, 0, 49479961, 13, 0, 49873159, 13, 0, 49873194, 13, 0, 49873264, 13, 0, 50069815, 13, 0, 50135377, 13, 0, 50331997, 13, 0, 50397461, 13, 0, 50397483, 13, 0, 50397497, 13, 0, 50397517, 13, 0, 51446071, 13, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+[connection signal="body_entered" from="Passagem_CasteloDalton" to="Passagem_CasteloDalton" method="_on_Passagem_CasteloDalton_body_entered"]

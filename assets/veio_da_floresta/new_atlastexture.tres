@@ -5,4 +5,4 @@
 [resource]
 flags = 4
 atlas = ExtResource( 1 )
-region = Rect2( 3, 41, 15, 26 )
+region = Rect2( 3, 5, 16, 29 )

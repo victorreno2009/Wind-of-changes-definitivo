@@ -74,7 +74,7 @@ __meta__ = {
 }
 
 [node name="next-indicator" type="Sprite" parent="DialogBox"]
-position = Vector2( 273.255, 97.804 )
+position = Vector2( 293.255, 97.804 )
 scale = Vector2( 0.304, 0.279 )
 texture = ExtResource( 3 )
 
