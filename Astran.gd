@@ -39,7 +39,12 @@ func update_animation():
 		# $AnimatedSprite.play("Walk_Up")
 		# $AnimatedSprite.play("Walk_Down")
 
-func spawnDialogo(dialog, escolha):
+func spawnDialogo(dialog, escolha, escolha1, escolha2, NPC1):
 	var dialogBox = cenaDialogo.instance()
-	self.add_child(dialogBox)
-	dialogBox.get_node("DialogBox").getDialog(dialog, escolha)
+	$CanvasLayer.add_child(dialogBox)
+	dialogBox.get_node("DialogBox").getDialog(dialog, escolha, escolha1, escolha2, NPC1)
+
+func spawnDialog(dialog, escolha):
+	var dialogBox = cenaDialogo.instance()
+	$CanvasLayer.add_child(dialogBox)
+	dialogBox.get_node("DialogBox").getDialogo(dialog, escolha)

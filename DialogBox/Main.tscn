@@ -37,13 +37,12 @@ anchor_left = 0.483
 anchor_top = 1.0
 anchor_right = 0.483
 anchor_bottom = 1.0
-margin_left = -165.159
-margin_top = -136.131
-margin_right = 173.841
-margin_bottom = -19.1311
+margin_left = -175.754
+margin_top = -139.839
+margin_right = 163.246
+margin_bottom = -22.8392
 script = ExtResource( 4 )
 __meta__ = {
-"_edit_group_": true,
 "_edit_use_anchors_": false
 }
 
@@ -83,4 +82,23 @@ autoplay = "IDLE"
 anims/IDLE = SubResource( 2 )
 
 [node name="Tween" type="Tween" parent="DialogBox"]
+
+[node name="Button1" type="Button" parent="DialogBox"]
+visible = false
+margin_left = 152.413
+margin_top = 15.0
+margin_right = 164.413
+margin_bottom = 35.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="DialogBox"]
+visible = false
+margin_left = 152.413
+margin_top = 53.7549
+margin_right = 164.413
+margin_bottom = 73.7549
 [connection signal="tween_completed" from="DialogBox/Tween" to="DialogBox" method="_on_Tween_tween_completed"]
+[connection signal="pressed" from="DialogBox/Button1" to="DialogBox" method="_on_Button1_pressed"]
+[connection signal="pressed" from="DialogBox/Button2" to="DialogBox" method="_on_Button2_pressed"]
