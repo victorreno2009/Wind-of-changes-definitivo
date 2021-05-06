@@ -37,9 +37,6 @@ tile_data = PoolIntArray( 0, 0, 0, 131083, 3, 0, 131084, 3, 0, 131087, 4, 0, 196
 [node name="Rei Zeal" parent="." instance=ExtResource( 3 )]
 position = Vector2( 191.6, 160.491 )
 
-[node name="Astran" parent="." instance=ExtResource( 2 )]
-position = Vector2( 191.587, 259.365 )
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 autoplay = true
@@ -61,4 +58,7 @@ position = Vector2( 157.198, 144.491 )
 
 [node name="Guards2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 217.309, 144.491 )
+
+[node name="Astran" parent="." instance=ExtResource( 2 )]
+position = Vector2( 191.587, 259.365 )
 [connection signal="body_entered" from="Passagem_Vila" to="Passagem_Vila" method="_on_Passagem_Vila_body_entered"]

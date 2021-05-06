@@ -14,7 +14,7 @@ func getDialog(dialogue, escolha):
 
 func _process(delta):
 	$"next-indicator".visible = finished
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("Interact"):
 		load_dialog()
 	if dialog_index - 1 == fraseEscolhida and bol == false:
 		print("buttons.show")

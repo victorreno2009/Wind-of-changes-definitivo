@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/Village.png" type="Texture" id=1]
 [ext_resource path="res://Astran.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Guards.tscn" type="PackedScene" id=5]
 [ext_resource path="res://cenarios/Passagem_Floresta.gd" type="Script" id=6]
 [ext_resource path="res://cenarios/Passagem_TronoZeal.gd" type="Script" id=7]
+[ext_resource path="res://Homem_Vila.tscn" type="PackedScene" id=8]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( 568, 456, 576, 448, 576.02, 437.476, 593.323, 437.755, 594.161, 445.848, 612.301, 434.685, 655, 455.895 )
@@ -182,10 +183,10 @@ points = PoolVector2Array( 665.157, 669.741, 725.718, 671.695, 739.672, 664.997,
 7/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 21.7044, 10 )
+extents = Vector2( 10, 6.51105 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 10, 6.51105 )
+extents = Vector2( 22.3918, 7.95111 )
 
 [node name="vila" type="Node2D"]
 
@@ -202,11 +203,11 @@ __meta__ = {
 stream = ExtResource( 3 )
 autoplay = true
 
-[node name="NPC 1" parent="." instance=ExtResource( 4 )]
-position = Vector2( 765.538, 319.362 )
-
 [node name="NPC 2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 514.38, 356.322 )
+position = Vector2( 554.222, 407.052 )
+
+[node name="Homem_Vila" parent="NPC 2" instance=ExtResource( 8 )]
+position = Vector2( 251.03, -103.212 )
 
 [node name="Guards" parent="." instance=ExtResource( 5 )]
 position = Vector2( 155.012, 365.902 )
@@ -220,19 +221,12 @@ position = Vector2( 187.638, 363.358 )
 [node name="Camera2D" type="Camera2D" parent="Astran"]
 current = true
 
-[node name="Passagem_Floresta" type="Area2D" parent="."]
-script = ExtResource( 6 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_Floresta"]
-position = Vector2( 680.602, 102.779 )
-shape = SubResource( 5 )
-
 [node name="Passagem_TronoZeal" type="Area2D" parent="."]
 script = ExtResource( 7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_TronoZeal"]
 position = Vector2( 187.662, 350.499 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 
 [node name="Paredes" type="StaticBody2D" parent="."]
 
@@ -250,6 +244,12 @@ tile_data = PoolIntArray( 42009355, 7, 0, 43516523, 7, 0 )
 __meta__ = {
 "_editor_description_": ""
 }
-[connection signal="body_entered" from="Passagem_Floresta" to="Passagem_Floresta" method="_on_Passagem_Floresta_body_entered"]
-[connection signal="body_exited" from="Passagem_Floresta" to="Passagem_Floresta" method="_on_Passagem_Floresta_body_exited"]
+
+[node name="Passagem_Floresta" type="Area2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_Floresta"]
+position = Vector2( 680.499, 104.077 )
+shape = SubResource( 6 )
 [connection signal="body_entered" from="Passagem_TronoZeal" to="Passagem_TronoZeal" method="_on_Passagem_TronoZeal_body_entered"]
+[connection signal="body_entered" from="Passagem_Floresta" to="Passagem_Floresta" method="_on_Passagem_Floresta_body_entered"]

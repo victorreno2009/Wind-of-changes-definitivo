@@ -1,12 +1,12 @@
 extends StaticBody2D
 var refjogador = null
-var falas = ["teste", "olá mundo", "boa noite"]
+var falas = ["Velho: Preciso de ajuda!", "Velho: Preciso de algo para comer."]
 var escolha = 1
 var boolean = false
 var boolean2
 
 func _process(delta):
-	var inpt = Input.is_action_pressed("ui_accept")
+	var inpt = Input.is_action_pressed("Interact")
 	if inpt and boolean:
 		refjogador.spawnDialogo(falas, escolha)
 		boolean = false

@@ -3,7 +3,7 @@
 [ext_resource path="res://assets/Florest.png" type="Texture" id=1]
 [ext_resource path="res://Astran.tscn" type="PackedScene" id=2]
 [ext_resource path="res://BGM/sound packs/Chrono-Trigger-OST-11-Secret-of-the-Forest_1.ogg" type="AudioStream" id=3]
-[ext_resource path="res://cenarios/Passagem_Floresta.gd" type="Script" id=4]
+[ext_resource path="res://cenarios/Passagem_FlorestaEscura.gd" type="Script" id=4]
 [ext_resource path="res://DialogBox/Main.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/veio_da_floresta/veio.tscn" type="PackedScene" id=6]
 
@@ -181,7 +181,7 @@
 8/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 40, 10 )
+extents = Vector2( 24.3339, 4.9751 )
 
 [node name="floresta" type="Node2D"]
 
@@ -214,13 +214,6 @@ margin_bottom = 155.198
 stream = ExtResource( 3 )
 autoplay = true
 
-[node name="Passagem_Floresta" type="Area2D" parent="."]
-script = ExtResource( 4 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_Floresta"]
-position = Vector2( 296, 48 )
-shape = SubResource( 2 )
-
 [node name="Paredes" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Paredes"]
@@ -234,4 +227,11 @@ tile_data = PoolIntArray( 15925416, 1, 0, 15990964, 1, 0, 16122041, 1, 0, 163841
 __meta__ = {
 "_editor_description_": ""
 }
-[connection signal="body_entered" from="Passagem_Floresta" to="Passagem_Floresta" method="_on_Passagem_Floresta_body_entered"]
+
+[node name="Passagem_FlorestaEscura" type="Area2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Passagem_FlorestaEscura"]
+position = Vector2( 297.618, 33.823 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Passagem_FlorestaEscura" to="Passagem_FlorestaEscura" method="_on_Passagem_FlorestaEscura_body_entered"]

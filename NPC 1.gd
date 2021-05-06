@@ -1,6 +1,8 @@
 extends StaticBody2D
+
+
 var refjogador = null
-var falas = ["Guarda de Zeal: Acha mesmo que tu és confiável para exercer esta missão?", "Guarda de Zeal: Tu não passa de um ladrão!"]
+var falas = ["Mulher: Caro senhor, tu podes me ajudar a levantar esta mercadoria?"]
 var escolha = 1
 var boolean = false
 var boolean2
