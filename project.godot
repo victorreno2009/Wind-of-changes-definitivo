@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Object",
+"class": "message",
+"language": "GDScript",
+"path": "res://mensagem.gd"
+} ]
 _global_script_class_icons={
-
+"message": ""
 }
 
 [application]
@@ -18,6 +23,10 @@ _global_script_class_icons={
 config/name="WIND OF CHANGES"
 run/main_scene="res://Tela_Inicial.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Serial="*res://Serial.gd"
 
 [display]
 

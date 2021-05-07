@@ -6,18 +6,32 @@ var pos = "Idle_Up"
 
 var movement = Vector2(0,0)
 
-func _physics_process(delta):
+func _ready():
+	Serial.connect("Cima", self, "update_moviment")
+	Serial.connect("Baixo", self, "update_moviment")
+	Serial.connect("Esquerda", self, "update_moviment")
+	Serial.connect("Direita", self, "update_moviment")
+	
 
-	
-	var horizontal_Axis = Input.get_action_strength("Right") - Input.get_action_strength("Left")
-	movement.x = velocidade_andar * horizontal_Axis
-	var vertical_Axis = Input.get_action_strength("Down") - Input.get_action_strength("Up")
-	movement.y = velocidade_andar * vertical_Axis
-	
-	
+func update_moviment(tipo):
+	movement = Vector2(0,0);		
+	if (tipo == "Baixo"):
+		movement.y = velocidade_andar
+	elif (tipo == "Cima"):
+		movement.y = - velocidade_andar
+	elif (tipo == "Esquerda"):
+		movement.x = - velocidade_andar
+	elif (tipo == "Direita"):
+		movement.x = velocidade_andar
+
+		
 	move_and_slide(movement,Vector2.UP)
 	
 	update_animation()
+	
+	
+	
+		
 
 func update_animation():
 	if movement.x > 0:
@@ -36,6 +50,7 @@ func update_animation():
 		pos = "Idle_Up"
 	elif movement.y == 0 and movement.x == 0: 
 		$AnimatedSprite.play(pos)
+	print(movement)
 		# $AnimatedSprite.play("Walk_Up")
 		# $AnimatedSprite.play("Walk_Down")
 
