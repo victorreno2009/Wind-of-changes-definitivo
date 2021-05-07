@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Musica_Tela_Prologo.ogg-d88df437eb4430800e9f1f803cb4335e.oggstr"
+
+[deps]
+
+source_file="res://BGM/sound packs/Musica_Tela_Prologo.ogg"
+dest_files=[ "res://.import/Musica_Tela_Prologo.ogg-d88df437eb4430800e9f1f803cb4335e.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

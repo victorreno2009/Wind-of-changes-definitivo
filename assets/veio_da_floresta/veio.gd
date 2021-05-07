@@ -26,11 +26,11 @@ func _on_Area2D_body_exited(body):
 
 func escolha_boa():
 	$Label.text = "Muito agradecido, caro senhor."
-	yield(get_tree().create_timer(3), "timeout")
+	yield(get_tree().create_timer(4), "timeout")
 	$Label.text = ""
 
 
 func escolha_ruim():
 	$Label.text = "..."
-	yield(get_tree().create_timer(3), "timeout")
+	yield(get_tree().create_timer(4), "timeout")
 	$Label.text = ""

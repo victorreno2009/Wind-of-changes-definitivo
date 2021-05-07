@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Tela_prologo.png" type="Texture" id=1]
+[ext_resource path="res://Arial Negrito.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Tela_prologo.gd" type="Script" id=3]
+[ext_resource path="res://BGM/sound packs/Musica_Tela_Prologo.ogg" type="AudioStream" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+font_data = ExtResource( 2 )
+
+[node name="Tela_prologo" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tela_prologo" type="Sprite" parent="."]
+position = Vector2( 191.528, 144.983 )
+scale = Vector2( 0.897085, 0.674836 )
+texture = ExtResource( 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 30.7144
+margin_top = 44.2246
+margin_right = 362.714
+margin_bottom = 369.225
+custom_fonts/font = SubResource( 1 )
+text = "Em 1341, um evento marcante na história da humanidade estava se desenvolvendo, na ascensão de um império
+tirano e cruel, um outro reino decide ser resistência a altura de uma onda de destruição e tragédia. Astran, um
+ex-ladrão condenado à morte, recebe uma missão do rei Zeal para se infiltrar no reino tirano de Dalton e acabar
+com as ondas de genocídio e assim se salvar da pena de morte, mas é confrontado pelo caminho por vários dilemas e decisões extremamente importantes, onde o
+rumo da história estará decidido nas mãos de Astran."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button_Continuar" type="Button" parent="."]
+margin_left = 147.954
+margin_top = 227.78
+margin_right = 220.954
+margin_bottom = 247.78
+text = "Continuar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+[connection signal="pressed" from="Button_Continuar" to="." method="_on_Button_Continuar_pressed"]
